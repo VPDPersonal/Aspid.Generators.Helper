@@ -18,6 +18,14 @@ public sealed class DeclarationText
         _name = declaration.Identifier.Text;
         _genericArguments = GetGenericArguments(declaration);
     }
+    
+    public DeclarationText(string modifiers, string type, string name, string? genericArguments)
+    {
+        _modifiers = modifiers;
+        _type = type;
+        _name = name;
+        _genericArguments = genericArguments;
+    }
 
     public string GetFileName(NamespaceText? namespaceText, string? postfix)
     {

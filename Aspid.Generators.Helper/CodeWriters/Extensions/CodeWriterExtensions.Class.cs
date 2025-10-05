@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Aspid.Generators.Helper.Text;
 
 // ReSharper disable once CheckNamespace
@@ -33,7 +34,17 @@ public static partial class CodeWriterExtensions
         DeclarationText declaration,
         params string[]? baseTypes)
     {
-        return code.BeginClass([], @namespace, declaration, baseTypes);
+        return code.BeginClass(Array.Empty<string>(), @namespace, declaration, baseTypes);
+    }
+    
+    public static CodeWriter BeginClass(
+        this CodeWriter code,
+        NamespaceText[] imports,
+        NamespaceText? @namespace,
+        DeclarationText declaration,
+        params string[]? baseTypes)
+    {
+        return code.BeginClass(imports.Select(import => (string)import!).ToArray(), @namespace, declaration, baseTypes);
     }
     
     public static CodeWriter BeginClass(

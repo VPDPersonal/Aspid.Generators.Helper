@@ -5,7 +5,13 @@ namespace Aspid.Generators.Helper.CodeWriters;
 
 public static partial class CodeWriterExtensions
 {
-     public static CodeWriter AppendLineIf(this CodeWriter code, bool flag, bool value)
+    public static CodeWriter AppendLineIf(this CodeWriter code, bool flag)
+    {
+        if (flag) code.AppendLine();
+        return code;
+    }
+    
+    public static CodeWriter AppendLineIf(this CodeWriter code, bool flag, bool value)
     {
         if (flag) code.AppendLine(value);
         return code;
