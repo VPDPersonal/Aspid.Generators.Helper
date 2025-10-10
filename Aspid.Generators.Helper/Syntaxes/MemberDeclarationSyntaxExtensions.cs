@@ -1,10 +1,10 @@
 using System.Linq;
 using Microsoft.CodeAnalysis;
 using System.Collections.Generic;
-using Aspid.Generators.Helper.Text;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace Aspid.Generators.Helper.Syntaxes;
+// ReSharper disable CheckNamespace
+namespace Aspid.Generators.Helper;
 
 public static class MemberDeclarationSyntaxExtensions
 {

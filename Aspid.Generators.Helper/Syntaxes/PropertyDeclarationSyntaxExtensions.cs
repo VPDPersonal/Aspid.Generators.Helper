@@ -2,7 +2,8 @@ using System.Linq;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace Aspid.Generators.Helper.Syntaxes;
+// ReSharper disable CheckNamespace
+namespace Aspid.Generators.Helper;
 
 public static class PropertyDeclarationSyntaxExtensions
 {

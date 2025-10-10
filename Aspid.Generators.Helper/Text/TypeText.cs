@@ -1,11 +1,35 @@
-namespace Aspid.Generators.Helper.Text;
+using System;
 
-public class TypeText(string name, NamespaceText? namespaceText = null)
+// ReSharper disable CheckNamespace
+namespace Aspid.Generators.Helper;
+
+public class TypeText
 {
-    public readonly string Name = name;
-    public readonly NamespaceText? Namespace = namespaceText;
-    public readonly string FullName = GetFullName(name, namespaceText);
-    public readonly string GlobalName = GetGlobalName(name, namespaceText);
+    public readonly string Name;
+    public readonly NamespaceText? Namespace;
+    
+    public readonly string FullName;
+    public readonly string GlobalName;
+
+    public TypeText(Type type)
+    {
+        var name = type.Name;
+        Name = name.Substring(0,name.IndexOf('`'));
+        
+        Namespace = type.ToNamespaceText();
+        
+        FullName = GetFullName(Name, Namespace);
+        GlobalName = GetGlobalName(Name, Namespace);
+    }
+    
+    public TypeText(string name, NamespaceText? namespaceText = null)
+    {
+        Name = name;
+        Namespace =  namespaceText;
+        
+        FullName = GetFullName(name, namespaceText);
+        GlobalName = GetGlobalName(name, namespaceText);
+    }
     
     protected bool Equals(TypeText other) =>
         FullName == other.FullName;

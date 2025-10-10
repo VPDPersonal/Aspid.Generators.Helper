@@ -1,6 +1,7 @@
 using Microsoft.CodeAnalysis;
 
-namespace Aspid.Generators.Helper.Symbols;
+// ReSharper disable CheckNamespace
+namespace Aspid.Generators.Helper;
 
 public static partial class SymbolExtensions
 {

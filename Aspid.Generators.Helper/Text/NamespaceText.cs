@@ -1,4 +1,5 @@
-namespace Aspid.Generators.Helper.Text;
+// ReSharper disable CheckNamespace
+namespace Aspid.Generators.Helper;
 
 public sealed class NamespaceText(string namespaceName, NamespaceText? parent = null)
 {

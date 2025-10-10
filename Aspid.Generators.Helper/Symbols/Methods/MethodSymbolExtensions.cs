@@ -1,8 +1,8 @@
 using System.Linq;
 using Microsoft.CodeAnalysis;
 
-// ReSharper disable once CheckNamespace
-namespace Aspid.Generators.Helper.Symbols;
+// ReSharper disable CheckNamespace
+namespace Aspid.Generators.Helper;
 
 public static class MethodSymbolExtensions
 {

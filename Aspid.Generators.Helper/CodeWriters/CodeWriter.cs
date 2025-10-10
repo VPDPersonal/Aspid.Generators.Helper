@@ -3,7 +3,8 @@ using System.Text;
 using System.CodeDom.Compiler;
 using Microsoft.CodeAnalysis.Text;
 
-namespace Aspid.Generators.Helper.CodeWriters;
+// ReSharper disable CheckNamespace
+namespace Aspid.Generators.Helper;
 
 public sealed class CodeWriter
 {

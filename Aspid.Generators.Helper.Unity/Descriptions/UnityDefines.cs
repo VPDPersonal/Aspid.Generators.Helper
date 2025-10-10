@@ -1,7 +1,8 @@
+// ReSharper disable CheckNamespace
 // ReSharper disable InconsistentNaming
-namespace Aspid.Generators.Helper.Descriptions;
+namespace Aspid.Generators.Helper.Unity;
 
-public static partial class Defines
+public static class Defines
 {
     public const string UNITY_IOS = nameof(UNITY_IOS);
     public const string UNITY_EDITOR = nameof(UNITY_EDITOR);

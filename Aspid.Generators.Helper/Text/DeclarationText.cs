@@ -2,7 +2,8 @@ using System.Linq;
 using System.Text;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-namespace Aspid.Generators.Helper.Text;
+// ReSharper disable CheckNamespace
+namespace Aspid.Generators.Helper;
 
 public sealed class DeclarationText
 {

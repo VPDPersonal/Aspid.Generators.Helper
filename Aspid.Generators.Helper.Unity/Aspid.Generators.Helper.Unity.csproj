@@ -7,11 +7,13 @@
         <Version>0.0.1-alpha.1</Version>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         
-        <PackageId>Aspid.Generators.Helper</PackageId>
-        <Title>Aspid.Generators.Helper</Title>
+        <UnityVersion>6000.2.5f1</UnityVersion>
+
+        <PackageId>Aspid.Generators.Helper.Unity</PackageId>
+        <Title>Aspid.Generators.Helper.Unity</Title>
         <Authors>Vladislav Panin</Authors>
         <Company>Aspid Entertainment</Company>
-        <PackageTags>source-generator;roslyn;csharp;code-generation;helpers</PackageTags>
+        <PackageTags>source-generator;roslyn;csharp;code-generation;helpers  </PackageTags>
         
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -20,23 +22,15 @@
         <RepositoryUrl>https://github.com/VPDPersonal/Aspid.Generators.Helper</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
 
-        <Description>Helper utilities for C# source generators: code writing helpers, Roslyn symbol and syntax extensions.</Description>
-        <PackageReleaseNotes>Alpha release:
-- Initial packaging of helper utilities for C# source generators.
-- CodeWriter helpers and Roslyn symbol/syntax extension methods.
-- Target framework: .NET Standard 2.0.
-- License: MIT.
-- Repository: https://github.com/VPDPersonal/Aspid.Generators.Helper
-(2025-10-06)</PackageReleaseNotes>
-        
         <PackageReadmeFile>README.md</PackageReadmeFile>
-
+        
         <PackageIcon>Aspid.MVVM Icon.jpg</PackageIcon>
     </PropertyGroup>
-
+    
     <ItemGroup>
+        <PackageReference Include="Unity3D" Version="3.0.1" />
+        <ProjectReference Include="..\Aspid.Generators.Helper\Aspid.Generators.Helper.csproj" />
         <None Include="README.md" Pack="true" PackagePath="" />
-        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.3.0" />
         <None Update="Aspid.MVVM Icon.jpg">
             <Pack>True</Pack>
             <PackagePath></PackagePath>

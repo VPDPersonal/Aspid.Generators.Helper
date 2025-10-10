@@ -1,24 +1,18 @@
 using System.Linq;
 using Microsoft.CodeAnalysis;
 using System.Collections.Generic;
-using Aspid.Generators.Helper.Text;
 
-namespace Aspid.Generators.Helper.Symbols;
+// ReSharper disable CheckNamespace
+namespace Aspid.Generators.Helper;
 
 public static partial class SymbolExtensions
 {
-    public static bool HasAttributeInSelf(this ISymbol symbol, TypeText attributeName) =>
-        symbol.TryGetAttributeInSelf(out _, attributeName);
-    
     public static bool HasAnyAttributeInSelf(this ISymbol symbol, IReadOnlyCollection<string> attributeNames) =>
         symbol.TryGetAnyAttributeInSelf(out _, attributeNames);
     
     public static bool HasAnyAttributeInSelf(this ISymbol symbol, params IReadOnlyCollection<TypeText> attributeNames) =>
         symbol.TryGetAnyAttributeInSelf(out _, attributeNames);
-
-    public static bool TryGetAttributeInSelf(this ISymbol symbol, out AttributeData? outAttribute, TypeText attributeName) =>
-        symbol.TryGetAnyAttributeInSelf(out outAttribute, attributeName);
-
+    
     public static bool TryGetAnyAttributeInSelf(this ISymbol symbol, out AttributeData? outAttribute, IReadOnlyCollection<string> attributeNames)
     {
         outAttribute = symbol.GetAttributesInSelf(attributeNames).FirstOrDefault();;

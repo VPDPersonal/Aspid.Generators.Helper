@@ -1,7 +1,7 @@
 using System;
 
-// ReSharper disable once CheckNamespace
-namespace Aspid.Generators.Helper.CodeWriters;
+// ReSharper disable CheckNamespace
+namespace Aspid.Generators.Helper;
 
 public static partial class CodeWriterExtensions
 {

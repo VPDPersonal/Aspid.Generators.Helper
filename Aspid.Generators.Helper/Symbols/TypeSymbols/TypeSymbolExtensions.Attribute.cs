@@ -1,10 +1,9 @@
 using System.Linq;
 using Microsoft.CodeAnalysis;
 using System.Collections.Generic;
-using Aspid.Generators.Helper.Text;
 
-// ReSharper disable once CheckNamespace
-namespace Aspid.Generators.Helper.Symbols;
+// ReSharper disable CheckNamespace
+namespace Aspid.Generators.Helper;
 
 public static partial class TypeSymbolExtensions
 {
