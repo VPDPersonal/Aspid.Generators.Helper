@@ -5,6 +5,7 @@ namespace Aspid.Generators.Helper.Unity;
 public static class UnityNamespaces
 {
     public static readonly NamespaceText Unity = new(nameof(Unity));
+    public static readonly NamespaceText Unity_Profiling = new("Profiling", Unity);
     
     public static readonly NamespaceText UnityEditor = new(nameof(UnityEditor));
     

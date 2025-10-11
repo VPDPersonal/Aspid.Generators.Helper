@@ -4,7 +4,7 @@
         <TargetFramework>netstandard2.0</TargetFramework>
         <LangVersion>13</LangVersion>
         <Nullable>enable</Nullable>
-        <Version>0.0.1-alpha.1</Version>
+        <Version>0.0.1-alpha.3</Version>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         
         <UnityVersion>6000.2.5f1</UnityVersion>

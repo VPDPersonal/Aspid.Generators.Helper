@@ -4,8 +4,8 @@ namespace Aspid.Generators.Helper.Unity;
 
 public static class UnityClasses
 {
-    public static readonly TypeText ProfilerMarker = new(nameof(ProfilerMarker), UnityNamespaces.Unity);
-    public static readonly TypeText ProfilerMarker_AutoScope = new("ProfilerMarker.AutoScope", UnityNamespaces.Unity);
+    public static readonly TypeText ProfilerMarker = new(nameof(ProfilerMarker), UnityNamespaces.Unity_Profiling);
+    public static readonly TypeText ProfilerMarker_AutoScope = new("ProfilerMarker.AutoScope", UnityNamespaces.Unity_Profiling);
 
     public static readonly TypeText Object = new(nameof(Object), UnityNamespaces.UnityEngine);
     public static readonly TypeText Component = new(nameof(Component), UnityNamespaces.UnityEngine);
