@@ -28,9 +28,8 @@
     </PropertyGroup>
     
     <ItemGroup>
-        <PackageReference Include="Unity3D" Version="3.0.1" />
-        <ProjectReference Include="..\Aspid.Generators.Helper\Aspid.Generators.Helper.csproj" />
         <None Include="README.md" Pack="true" PackagePath="" />
+        <ProjectReference Include="..\Aspid.Generators.Helper\Aspid.Generators.Helper.csproj" />
         <None Update="Aspid.MVVM Icon.jpg">
             <Pack>True</Pack>
             <PackagePath></PackagePath>

@@ -1,0 +1,1 @@
+Addition to Aspid.Generators.Helper, which includes descriptions of Unity3D classes

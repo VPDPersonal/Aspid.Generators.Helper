@@ -14,7 +14,9 @@ public class TypeText
     public TypeText(Type type)
     {
         var name = type.Name;
-        Name = name.Substring(0,name.IndexOf('`'));
+        
+        var lastIndex = name.LastIndexOf('`');
+        Name = lastIndex > -1 ? name.Substring(0,name.IndexOf('`')) : name;
         
         Namespace = type.ToNamespaceText();
         
