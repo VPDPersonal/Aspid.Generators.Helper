@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/github/license/VPDPersonal/Aspid.Generators.Helper?label=License&labelColor=254d2c&color=4fa35d)](LICENSE)
+
 # Aspid.Generators.Helper
 
 A set of utilities for simplifying Source Generators development:
