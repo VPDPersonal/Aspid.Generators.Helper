@@ -40,7 +40,7 @@ public static class Classes
     public static readonly TypeText IndexOutOfRangeException = typeof(IndexOutOfRangeException).ToTypeText();
     public static readonly TypeText InvalidOperationException = typeof(InvalidOperationException).ToTypeText();
     public static readonly TypeText ArgumentOutOfRangeException = typeof(ArgumentOutOfRangeException).ToTypeText();
-
+    
     // EditorBrowsableState
     public static readonly TypeText EditorBrowsableState = typeof(EditorBrowsableState).ToTypeText();
     public static readonly AttributeText EditorBrowsableAttribute = typeof(EditorBrowsableAttribute).ToAttributeText();
@@ -48,6 +48,11 @@ public static class Classes
     // MethodImpl
     public static readonly TypeText MethodImplOptions = typeof(MethodImplOptions).ToTypeText();
     public static readonly AttributeText MethodImplAttribute = typeof(MethodImplAttribute).ToAttributeText();
+    
+    // Caller Attributes
+    public static readonly AttributeText CallerFilePathAttribute = typeof(CallerFilePathAttribute).ToAttributeText();
+    public static readonly AttributeText CallerMemberNameAttribute = typeof(CallerMemberNameAttribute).ToAttributeText();
+    public static readonly AttributeText CallerLineNumberAttribute = typeof(CallerLineNumberAttribute).ToAttributeText();
     
     // Others
     public static readonly TypeText EqualityComparer_1 = typeof(EqualityComparer<>).ToTypeText();

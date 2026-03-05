@@ -33,6 +33,9 @@ public sealed class DeclarationText
         postfix ??= string.Empty;
         postfix = postfix!.Length > 0 && postfix[0] is not '.' ? $".{postfix}" : postfix;
 
+        if (!string.IsNullOrWhiteSpace(namespaceText)) namespaceText += ".";
+        else namespaceText = string.Empty;
+        
         namespaceText ??= string.Empty;
         return namespaceText + (_genericArguments is null
             ? $"{_name}{postfix}.g.cs" 
