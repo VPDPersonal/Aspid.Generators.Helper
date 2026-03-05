@@ -14,14 +14,14 @@ Text "builders" for delegates/attributes/namespaces
 The package is available on NuGet (prerelease):
 
 ```
-Install-Package Aspid.Generators.Helper -Version 0.0.1-alpha.1
+Install-Package Aspid.Generators.Helper -Version 0.1.0
 ```
 
 or via .csproj:
 
 ```xml
 <ItemGroup>
-  <PackageReference Include="Aspid.Generators.Helper" Version="0.0.1-alpha.1" />
+  <PackageReference Include="Aspid.Generators.Helper" Version="0.1.0" />
 </ItemGroup>
 ```
 
